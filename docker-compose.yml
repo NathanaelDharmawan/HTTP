@@ -1,9 +1,9 @@
 services:
-proxy:
-image: nginx:1.19
-ports:
-- "80:80"
-volumes:
-- ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-web:
-image: httpd
+  proxy:
+    image: nginx:1.19
+    ports:
+      - "80:80"
+    volumes:
+    - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+  web:
+    image: httpd
